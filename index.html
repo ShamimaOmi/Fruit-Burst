@@ -37,25 +37,33 @@
     <header class="container mx-auto">
         <!-- navbar section -->
         <nav>
-            <div class="navbar bg-red-300 rounded-full">
-                <div class=" navbar-start">
+            <div class=" navbar lg: bg-[#F85559] rounded-full">
+                <div class="flex flex-row-reverse navbar-end  lg:navbar-start">
                   <div class="dropdown ">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost ml-50   lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60">
                       <li><a>Home</a></li>
                       <li><a>About Us</a></li>
                       <li><a>Shop</a></li>
                       <li><a>All Fruits</a></li>
                       <li>
-                        <input type="text" placeholder="Search " class="input input-bordered w-24 md:w-auto rounded-full " />
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        
+                       
+                   
+                        
+                            <div class="relative flex items-center">
+                                <input type="text" placeholder="Search " class="input input-bordered   md:w-auto rounded-full" />
+                                <i class="fa-solid fa-magnifying-glass absolute ml-44 opacity-30"></i>
+                            </div>
+                              
+                        
                       </li>
                     </ul>
                   </div>
-                  <!-- <a class="btn btn-ghost normal-case text-xl">daisy</a> -->
-                  <ul class="hidden lg:flex gap-4  ">
+                 
+                  <ul class="hidden lg:flex gap-4 text-lg text-white mx-11">
                     <li><a >Home </a></li>
                     <li><a >About Us</a></li>
                     <li><a >Shop</a></li>
@@ -63,33 +71,20 @@
                         
                   </ul>
                 </div>
-                <div class=" navbar-center">
+                <div class="navbar-start  lg:navbar-center">
                     <img src="images/logo.png" alt="">
-                    <h3>Fruit Burst</h3>
-                    <!-- <a class="btn btn-ghost normal-case text-xl">daisyUI</a> -->
+                   
+                    <h3 class="text-2xl  lg:text-4xl font-bold lg: text-gray-500">Fruit Burst</h3>
+                    
                   </div>
-                <!-- <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                </div> -->
+                
 
-                <div class="navbar-end ">
+                <div class="hidden md:hidden lg:flex navbar-end ">
                    
                         
-                    <div class="">
-                        <input type="text" placeholder="Search " class="input input-bordered w-24 md:w-auto rounded-full" />
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="relative flex items-center">
+                        <input type="text" placeholder="Search " class="input   md:w-auto rounded-full" />
+                        <i class="fa-solid fa-magnifying-glass absolute ml-44 opacity-30"></i>
                     </div>
                       
                 </div>
@@ -115,28 +110,7 @@
                
             </div>
            
-                <div class="bg-orange-400 grid grid-cols-5 max-h-64 absolute top-0.5/4">
-                    <div>
-                        <img src="images/fruit1.png" alt="">
-                        <p>orange</p>
-                    </div>
-                    <div>
-                        <img src="images/fruit2.png" alt="">
-                        <p>orange</p>
-                    </div>
-                    <div>
-                        <img src="images/fruit3.png" alt="">
-                        <p>orange</p>
-                    </div>
-                    <div>
-                        <img src="images/fruit4.png" alt="">
-                        <p>orange</p>
-                    </div>
-                    <div>
-                        <img src="images/fruit5.png" alt="">
-                        <p>orange</p>
-                    </div>
-                  </div>
+               
            
               </div>
            </div>
@@ -148,16 +122,17 @@
              
             </div> 
             
+            
            
 
 
              <!--slide-2  -->
-             <div id="slide2" class="carousel-item relative w-full">
+             <div id="slide2" class="carousel-item relative w-full ">
                 <div class="hero min-h-screen" style="background-image: url(images/banner2.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-overlay bg-opacity-60">
              
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-2xl ">
+                <div class="max-w-2xl mt-10 ">
                     <h1 class="mb-5 text-7xl font-extrabold text-white  ">Exotic tastes at your
                       <br> 
                       
@@ -166,6 +141,7 @@
                     <button class="btn bg-color-primary border-none text-white my-5 ">Shop Now</button>
                   </div>
               </div>
+            </div>
            </div>
            
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -175,12 +151,12 @@
             </div>
 
             <!-- slide-3 -->
-            <div id="slide3" class="carousel-item relative w-full">
+            <div id="slide3" class="carousel-item relative w-full mt-10">
                 <div class="hero min-h-screen" style="background-image: url(images/banner3.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-overlay bg-opacity-60">
              
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-2xl ">
+                <div class="max-w-2xl mt-10">
                     <h1 class="mb-5 text-7xl font-extrabold text-white  ">Exotic tastes at your
                       <br> 
                       
@@ -189,6 +165,7 @@
                     <button class="btn bg-color-primary border-none text-white my-5 ">Shop Now</button>
                   </div>
               </div>
+            </div>
            </div>
            
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -199,12 +176,12 @@
             <!-- slide-4 -->
              
             
-            <div id="slide4" class="carousel-item relative w-full">
+            <div id="slide4" class="carousel-item relative w-full mt-10">
                 <div class="hero min-h-screen" style="background-image: url(images/banner4.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-overlay bg-opacity-60">
              
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-2xl ">
+                <div class="max-w-2xl mt-10 ">
                     <h1 class="mb-5 text-7xl font-extrabold text-white  ">Exotic tastes at your
                       <br> 
                       
@@ -213,6 +190,7 @@
                     <button class="btn bg-color-primary border-none text-white my-5 ">Shop Now</button>
                   </div>
               </div>
+            </div>
            </div>
            
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -221,6 +199,33 @@
               </div>
             </div>
           </div>
+
+          <!-- bonus -->
+          <div class="flex justify-center">
+
+            <div class="hidden md:flex  justify-around items-center  pb-5 bg-white md:w-[600px] lg:w-[1000px] rounded-md absolute md:top-[470px] lg:top-[700px]">
+                <div>
+                    <img src="images/fruit1.png" alt="">
+                    <p class="text-center text-base text-gray-500 ">Grape</p>
+                </div>
+                <div>
+                    <img src="images/fruit2.png" alt="">
+                    <p class="text-center text-base text-gray-500">Orange</p>
+                </div>
+                <div>
+                    <img src="images/fruit3.png" alt="">
+                    <p class="text-center text-base text-gray-500">Mango</p>
+                </div>
+                <div>
+                    <img src="images/fruit4.png" alt="">
+                    <p class="text-center text-base text-gray-500">Strawberry</p>
+                </div>
+                <div>
+                    <img src="images/fruit5.png" alt="">
+                    <p class="text-center text-base text-gray-500">Pomegranate</p>
+                </div>
+              </div>
+            </div>
 
 
     </header>
@@ -273,7 +278,7 @@
                       <p class="text-base font-medium text-gray-500]">Apple</p>
                       
                     </div>
-                    <div class="rating rating-lg rating-half px-28 ">
+                    <div class="rating rating-lg rating-half md:flex justify-center lg:px-28 ">
                         <input type="radio" name="rating-5" class="rating-hidden" />
                         <input type="radio" name="rating-5" class="bg-orange-400 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-5" class="bg-orange-400 mask mask-star-2 mask-half-2" />
@@ -294,7 +299,7 @@
   <div class="modal-box text-center">
     <img class="px-44" src="images/fruit6.png" alt="">
     <h3 class="font-bold text-4xl my-3">Apple</h3>
-    <p class="py-4 text-base">Professional employees are there for you to pick the 
+    <p class=" lg:py-4 text-base">Professional employees are there for you to pick the 
         <br>most amazing and fresh fruits.</p>
         <div class="rating rating-lg rating-half px-28 ">
             <input type="radio" name="rating-1" class="rating-hidden" />
@@ -328,7 +333,7 @@
                       <p class="text-base font-medium text-gray-700]">Orange</p>
                       
                     </div>
-                    <div class="rating rating-lg rating-half px-28 ">
+                    <div class="rating rating-lg rating-half md:flex justify-center lg:px-28 ">
                         <input type="radio" name="rating-6" class="rating-hidden" />
                         <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2 mask-half-2" />
@@ -346,7 +351,7 @@
                         <div class="modal-box text-center">
                           <img class="px-44" src="images/fruit7.png" alt="">
                           <h3 class="font-bold text-4xl my-3">Orange</h3>
-                          <p class="py-4 text-base">Professional employees are there for you to pick the 
+                          <p class="lg:py-4 text-base">Professional employees are there for you to pick the 
                               <br>most amazing and fresh fruits.</p>
                               <div class="rating rating-lg rating-half px-28 ">
                                   <input type="radio" name="rating-2" class="rating-hidden" />
@@ -377,7 +382,7 @@
                       <p class="text-base font-medium text-gray-700]">Red Dragon</p>
                       
                     </div>
-                    <div class="rating rating-lg rating-half px-28 ">
+                    <div class="rating rating-lg rating-half md:flex justify-center  lg:px-28 ">
                         <input type="radio" name="rating-7" class="rating-hidden" />
                         <input type="radio" name="rating-7" class="bg-orange-400 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-7" class="bg-orange-400 mask mask-star-2 mask-half-2" />
@@ -395,7 +400,7 @@
                         <div class="modal-box text-center">
                           <img class="px-44" src="images/fruit8.png" alt="">
                           <h3 class="font-bold text-4xl my-3">Red Dragon</h3>
-                          <p class="py-4 text-base">Professional employees are there for you to pick the 
+                          <p class="lg:py-4 text-base">Professional employees are there for you to pick the 
                               <br>most amazing and fresh fruits.</p>
                               <div class="rating rating-lg rating-half px-28 ">
                                   <input type="radio" name="rating-1" class="rating-hidden" />
@@ -426,7 +431,7 @@
                       <p class="text-base font-medium text-gray-700]">Banana</p>
                       
                     </div>
-                    <div class="rating rating-lg rating-half px-28 ">
+                    <div class="rating rating-lg rating-half md:flex justify-center  lg:px-28 ">
                         <input type="radio" name="rating-8" class="rating-hidden" />
                         <input type="radio" name="rating-8" class="bg-orange-400 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-8" class="bg-orange-400 mask mask-star-2 mask-half-2" />
@@ -444,7 +449,7 @@
                         <div class="modal-box text-center">
                           <img class="px-44" src="images/fruit8.png" alt="">
                           <h3 class="font-bold text-4xl my-3">Banana</h3>
-                          <p class="py-4 text-base">Professional employees are there for you to pick the 
+                          <p class="lg:py-4 text-base">Professional employees are there for you to pick the 
                               <br>most amazing and fresh fruits.</p>
                               <div class="rating rating-lg rating-half px-28 ">
                                   <input type="radio" name="rating-1" class="rating-hidden" />
